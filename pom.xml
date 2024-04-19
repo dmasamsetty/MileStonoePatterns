@@ -64,24 +64,25 @@
     </dependencies>
 
     <build>
-        <plugins>
-            <!-- Configure maven-compiler-plugin for Java 17 -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.11.7</version> <!-- or later version that supports Java 17 -->
-                <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
-                </configuration>
-            </plugin>
+    <plugins>
+        <!-- Configure maven-compiler-plugin for Java 17 -->
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.1</version> <!-- Use a compatible version (e.g., 3.8.1) -->
+            <configuration>
+                <source>${java.version}</source>
+                <target>${java.version}</target>
+            </configuration>
+        </plugin>
 
-            <!-- Plugin for Spring Boot packaging -->
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
+        <!-- Plugin for Spring Boot packaging -->
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
+    </plugins>
+</build>
+
 
 </project>

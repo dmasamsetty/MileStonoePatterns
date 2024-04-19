@@ -55,12 +55,6 @@
             <!-- Specify the version of PostgreSQL Connector -->
             <version>42.2.23</version>
         </dependency>
-        <!-- Jakarta Persistence API Dependencies -->
-        <dependency>
-            <groupId>jakarta.persistence</groupId>
-            <artifactId>jakarta.persistence-api</artifactId>
-            <version>3.0.0</version>
-        </dependency>
         <dependency>
             <groupId>org.hibernate.javax.persistence</groupId>
             <artifactId>hibernate-jpa-2.1-api</artifactId>

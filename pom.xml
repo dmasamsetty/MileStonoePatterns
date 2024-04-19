@@ -22,7 +22,7 @@
     </properties>
 
     <dependencies>
-        <!-- Spring Boot Starter dependencies -->
+        <!-- Spring Boot Starter Dependencies -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -42,14 +42,18 @@
             <optional>true</optional>
         </dependency>
         <dependency>
-            <groupId>com.mysql</groupId>
+            <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <scope>runtime</scope>
+            <!-- Specify the version of MySQL Connector -->
+            <version>8.0.28</version>
         </dependency>
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <scope>runtime</scope>
+            <!-- Specify the version of PostgreSQL Connector -->
+            <version>42.2.23</version>
         </dependency>
         <!-- Spring Boot Starter Test -->
         <dependency>
